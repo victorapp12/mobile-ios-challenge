@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 struct Product : Mappable {
+    
     var name : String?
     var style : String?
     var code_color : String?
@@ -39,6 +40,7 @@ struct Product : Mappable {
         installments <- map["installments"]
         image <- map["image"]
         sizes <- map["sizes"]
+        
     }
     
 }
