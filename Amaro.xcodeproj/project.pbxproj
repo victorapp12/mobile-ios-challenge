@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283F4BFB284F5972493FB676 /* Pods_Amaro_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B66FE3E3C98FE5CCF7B3B33 /* Pods_Amaro_WatchKit_App.framework */; };
+		7B8C5229F32A04E2D21E9415 /* Pods_AmaroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6D59956B907F03E439235 /* Pods_AmaroTests.framework */; };
+		8C5584150D3F76A7108FA76D /* Pods_Amaro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D591915438DE12DCF99BF19 /* Pods_Amaro.framework */; };
 		931EFECF22751D390074961B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EFECE22751D390074961B /* AppDelegate.swift */; };
 		931EFED122751D390074961B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EFED022751D390074961B /* ViewController.swift */; };
 		931EFED422751D390074961B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931EFED222751D390074961B /* Main.storyboard */; };
@@ -17,9 +20,13 @@
 		931EFEEF22751D3B0074961B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931EFEED22751D3B0074961B /* Interface.storyboard */; };
 		931EFEF122751D3C0074961B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931EFEF022751D3C0074961B /* Assets.xcassets */; };
 		931EFEF822751D3C0074961B /* Amaro WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 931EFEF722751D3C0074961B /* Amaro WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		931EFEFD22751D3C0074961B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EFEFC22751D3C0074961B /* InterfaceController.swift */; };
 		931EFEFF22751D3C0074961B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EFEFE22751D3C0074961B /* ExtensionDelegate.swift */; };
 		931EFF0122751D3D0074961B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931EFF0022751D3D0074961B /* Assets.xcassets */; };
+		93C129E622753EE00040D765 /* CatalogInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E522753EE00040D765 /* CatalogInterfaceController.swift */; };
+		93C129E822753F570040D765 /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E722753F570040D765 /* CatalogInteractor.swift */; };
+		93C129EA22753F8B0040D765 /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E922753F8B0040D765 /* CatalogPresenter.swift */; };
+		93C129EC22753FC10040D765 /* CatalogWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129EB22753FC10040D765 /* CatalogWorker.swift */; };
+		CFA7BD39A57216402DE37C3A /* libPods-Amaro WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FFA20169C749A44D3706E1 /* libPods-Amaro WatchKit Extension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0ABE70C74F64BFE6B7364AE8 /* Pods-Amaro WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro WatchKit Extension/Pods-Amaro WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		0B66FE3E3C98FE5CCF7B3B33 /* Pods_Amaro_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaro_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		125FFFE8D6CB4FB8F85BCE5E /* Pods-AmaroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmaroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmaroTests/Pods-AmaroTests.release.xcconfig"; sourceTree = "<group>"; };
+		47B07A94ADD1140FE3974671 /* Pods-Amaro WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro WatchKit App/Pods-Amaro WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		47FFA20169C749A44D3706E1 /* libPods-Amaro WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Amaro WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D591915438DE12DCF99BF19 /* Pods_Amaro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83420D90D191E2260096B53D /* Pods-AmaroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmaroTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmaroTests/Pods-AmaroTests.debug.xcconfig"; sourceTree = "<group>"; };
 		931EFECB22751D390074961B /* Amaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		931EFECE22751D390074961B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		931EFED022751D390074961B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,17 +101,34 @@
 		931EFEF022751D3C0074961B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931EFEF222751D3C0074961B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931EFEF722751D3C0074961B /* Amaro WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Amaro WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		931EFEFC22751D3C0074961B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		931EFEFE22751D3C0074961B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		931EFF0022751D3D0074961B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931EFF0222751D3D0074961B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C129E522753EE00040D765 /* CatalogInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInterfaceController.swift; sourceTree = "<group>"; };
+		93C129E722753F570040D765 /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
+		93C129E922753F8B0040D765 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
+		93C129EB22753FC10040D765 /* CatalogWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogWorker.swift; sourceTree = "<group>"; };
+		B9D6D59956B907F03E439235 /* Pods_AmaroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmaroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB351826A9B1516E4C17A4C /* Pods-Amaro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro/Pods-Amaro.debug.xcconfig"; sourceTree = "<group>"; };
+		D309967704EC5BF070C69FCD /* Pods-Amaro WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro WatchKit Extension/Pods-Amaro WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		E19D61FDC4F6E8153A747786 /* Pods-Amaro WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro WatchKit App/Pods-Amaro WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		FD5652BA470B8DD739462DD5 /* Pods-Amaro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro/Pods-Amaro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84BEE5C9761816C2379E69BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283F4BFB284F5972493FB676 /* Pods_Amaro_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		931EFEC822751D390074961B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5584150D3F76A7108FA76D /* Pods_Amaro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8C5229F32A04E2D21E9415 /* Pods_AmaroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA7BD39A57216402DE37C3A /* libPods-Amaro WatchKit Extension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +159,8 @@
 				931EFEEC22751D3B0074961B /* Amaro WatchKit App */,
 				931EFEFB22751D3C0074961B /* Amaro WatchKit Extension */,
 				931EFECC22751D390074961B /* Products */,
+				E8E25892381DB70308738117 /* Pods */,
+				C6B94BBA895BA69E5206BAA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,12 +210,57 @@
 		931EFEFB22751D3C0074961B /* Amaro WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				931EFEFC22751D3C0074961B /* InterfaceController.swift */,
+				93C129E322753EAB0040D765 /* Scenes */,
 				931EFEFE22751D3C0074961B /* ExtensionDelegate.swift */,
 				931EFF0022751D3D0074961B /* Assets.xcassets */,
 				931EFF0222751D3D0074961B /* Info.plist */,
 			);
 			path = "Amaro WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		93C129E322753EAB0040D765 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				93C129E422753EBA0040D765 /* Catalog */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		93C129E422753EBA0040D765 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				93C129E522753EE00040D765 /* CatalogInterfaceController.swift */,
+				93C129E722753F570040D765 /* CatalogInteractor.swift */,
+				93C129E922753F8B0040D765 /* CatalogPresenter.swift */,
+				93C129EB22753FC10040D765 /* CatalogWorker.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		C6B94BBA895BA69E5206BAA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D591915438DE12DCF99BF19 /* Pods_Amaro.framework */,
+				0B66FE3E3C98FE5CCF7B3B33 /* Pods_Amaro_WatchKit_App.framework */,
+				47FFA20169C749A44D3706E1 /* libPods-Amaro WatchKit Extension.a */,
+				B9D6D59956B907F03E439235 /* Pods_AmaroTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8E25892381DB70308738117 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFB351826A9B1516E4C17A4C /* Pods-Amaro.debug.xcconfig */,
+				FD5652BA470B8DD739462DD5 /* Pods-Amaro.release.xcconfig */,
+				47B07A94ADD1140FE3974671 /* Pods-Amaro WatchKit App.debug.xcconfig */,
+				E19D61FDC4F6E8153A747786 /* Pods-Amaro WatchKit App.release.xcconfig */,
+				D309967704EC5BF070C69FCD /* Pods-Amaro WatchKit Extension.debug.xcconfig */,
+				0ABE70C74F64BFE6B7364AE8 /* Pods-Amaro WatchKit Extension.release.xcconfig */,
+				83420D90D191E2260096B53D /* Pods-AmaroTests.debug.xcconfig */,
+				125FFFE8D6CB4FB8F85BCE5E /* Pods-AmaroTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 931EFF0D22751D3D0074961B /* Build configuration list for PBXNativeTarget "Amaro" */;
 			buildPhases = (
+				08F298346A2F53958D1F7CF7 /* [CP] Check Pods Manifest.lock */,
 				931EFEC722751D390074961B /* Sources */,
 				931EFEC822751D390074961B /* Frameworks */,
 				931EFEC922751D390074961B /* Resources */,
@@ -209,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 931EFF1022751D3D0074961B /* Build configuration list for PBXNativeTarget "AmaroTests" */;
 			buildPhases = (
+				682F1C6482DC9F59F3C7297A /* [CP] Check Pods Manifest.lock */,
 				931EFEDB22751D3B0074961B /* Sources */,
 				931EFEDC22751D3B0074961B /* Frameworks */,
 				931EFEDD22751D3B0074961B /* Resources */,
@@ -227,8 +309,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 931EFF0922751D3D0074961B /* Build configuration list for PBXNativeTarget "Amaro WatchKit App" */;
 			buildPhases = (
+				317FC68909460DE0111DC47F /* [CP] Check Pods Manifest.lock */,
 				931EFEE622751D3B0074961B /* Resources */,
 				931EFF0822751D3D0074961B /* Embed App Extensions */,
+				84BEE5C9761816C2379E69BA /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 931EFF0522751D3D0074961B /* Build configuration list for PBXNativeTarget "Amaro WatchKit Extension" */;
 			buildPhases = (
+				7F0685E439EA9F75A05FE729 /* [CP] Check Pods Manifest.lock */,
 				931EFEF322751D3C0074961B /* Sources */,
 				931EFEF422751D3C0074961B /* Frameworks */,
 				931EFEF522751D3C0074961B /* Resources */,
@@ -340,6 +425,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08F298346A2F53958D1F7CF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Amaro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		317FC68909460DE0111DC47F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Amaro WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682F1C6482DC9F59F3C7297A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmaroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F0685E439EA9F75A05FE729 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Amaro WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		931EFEC722751D390074961B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -362,8 +538,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C129EA22753F8B0040D765 /* CatalogPresenter.swift in Sources */,
+				93C129E622753EE00040D765 /* CatalogInterfaceController.swift in Sources */,
 				931EFEFF22751D3C0074961B /* ExtensionDelegate.swift in Sources */,
-				931EFEFD22751D3C0074961B /* InterfaceController.swift in Sources */,
+				93C129EC22753FC10040D765 /* CatalogWorker.swift in Sources */,
+				93C129E822753F570040D765 /* CatalogInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +712,7 @@
 		};
 		931EFF0622751D3D0074961B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D309967704EC5BF070C69FCD /* Pods-Amaro WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -547,7 +727,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
@@ -555,6 +735,7 @@
 		};
 		931EFF0722751D3D0074961B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ABE70C74F64BFE6B7364AE8 /* Pods-Amaro WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -569,7 +750,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
@@ -577,6 +758,7 @@
 		};
 		931EFF0A22751D3D0074961B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B07A94ADD1140FE3974671 /* Pods-Amaro WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -588,7 +770,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
@@ -596,6 +778,7 @@
 		};
 		931EFF0B22751D3D0074961B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19D61FDC4F6E8153A747786 /* Pods-Amaro WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -607,7 +790,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
@@ -615,6 +798,7 @@
 		};
 		931EFF0E22751D3D0074961B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB351826A9B1516E4C17A4C /* Pods-Amaro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -626,13 +810,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Amaro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		931EFF0F22751D3D0074961B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD5652BA470B8DD739462DD5 /* Pods-Amaro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -644,13 +829,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Amaro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		931EFF1122751D3D0074961B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83420D90D191E2260096B53D /* Pods-AmaroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -672,6 +858,7 @@
 		};
 		931EFF1222751D3D0074961B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 125FFFE8D6CB4FB8F85BCE5E /* Pods-AmaroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
