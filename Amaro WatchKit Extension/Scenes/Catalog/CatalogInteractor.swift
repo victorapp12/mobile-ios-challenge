@@ -9,7 +9,7 @@
 import Foundation
 
 protocol CatalogInteractorProtocol {
-
+    func getProducts()
 }
 
 class CatalogInteractor: CatalogInteractorProtocol {
@@ -17,5 +17,11 @@ class CatalogInteractor: CatalogInteractorProtocol {
     var presenter: CatalogPresenterProtocol?
     var worker: CatalogWorker = CatalogWorker()
     
+    func getProducts() {
+        let url = BuildConfiguration.baseURL
+        worker.requestProducts(with: url, completion: { ProductsMain in
+            self.presenter?.present(ProductsMain)
+        })
+    }
     
 }

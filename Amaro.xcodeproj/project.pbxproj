@@ -26,6 +26,10 @@
 		93C129E822753F570040D765 /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E722753F570040D765 /* CatalogInteractor.swift */; };
 		93C129EA22753F8B0040D765 /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E922753F8B0040D765 /* CatalogPresenter.swift */; };
 		93C129EC22753FC10040D765 /* CatalogWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129EB22753FC10040D765 /* CatalogWorker.swift */; };
+		93C129EF227541F80040D765 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129EE227541F80040D765 /* Product.swift */; };
+		93C129F1227542040040D765 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129F0227542040040D765 /* Size.swift */; };
+		93C129F4227549EC0040D765 /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129F3227549EC0040D765 /* BuildConfiguration.swift */; };
+		93C129F6227550280040D765 /* ProductsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129F5227550280040D765 /* ProductsMain.swift */; };
 		CFA7BD39A57216402DE37C3A /* libPods-Amaro WatchKit Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FFA20169C749A44D3706E1 /* libPods-Amaro WatchKit Extension.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +112,10 @@
 		93C129E722753F570040D765 /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
 		93C129E922753F8B0040D765 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
 		93C129EB22753FC10040D765 /* CatalogWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogWorker.swift; sourceTree = "<group>"; };
+		93C129EE227541F80040D765 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		93C129F0227542040040D765 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		93C129F3227549EC0040D765 /* BuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfiguration.swift; sourceTree = "<group>"; };
+		93C129F5227550280040D765 /* ProductsMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsMain.swift; sourceTree = "<group>"; };
 		B9D6D59956B907F03E439235 /* Pods_AmaroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmaroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB351826A9B1516E4C17A4C /* Pods-Amaro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro/Pods-Amaro.debug.xcconfig"; sourceTree = "<group>"; };
 		D309967704EC5BF070C69FCD /* Pods-Amaro WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro WatchKit Extension/Pods-Amaro WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +218,8 @@
 		931EFEFB22751D3C0074961B /* Amaro WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				93C129F2227549B90040D765 /* Configuration */,
+				93C129ED227541DD0040D765 /* Models */,
 				93C129E322753EAB0040D765 /* Scenes */,
 				931EFEFE22751D3C0074961B /* ExtensionDelegate.swift */,
 				931EFF0022751D3D0074961B /* Assets.xcassets */,
@@ -235,6 +245,24 @@
 				93C129EB22753FC10040D765 /* CatalogWorker.swift */,
 			);
 			path = Catalog;
+			sourceTree = "<group>";
+		};
+		93C129ED227541DD0040D765 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93C129EE227541F80040D765 /* Product.swift */,
+				93C129F0227542040040D765 /* Size.swift */,
+				93C129F5227550280040D765 /* ProductsMain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93C129F2227549B90040D765 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				93C129F3227549EC0040D765 /* BuildConfiguration.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		C6B94BBA895BA69E5206BAA6 /* Frameworks */ = {
@@ -541,8 +569,12 @@
 				93C129EA22753F8B0040D765 /* CatalogPresenter.swift in Sources */,
 				93C129E622753EE00040D765 /* CatalogInterfaceController.swift in Sources */,
 				931EFEFF22751D3C0074961B /* ExtensionDelegate.swift in Sources */,
+				93C129F6227550280040D765 /* ProductsMain.swift in Sources */,
+				93C129F4227549EC0040D765 /* BuildConfiguration.swift in Sources */,
+				93C129EF227541F80040D765 /* Product.swift in Sources */,
 				93C129EC22753FC10040D765 /* CatalogWorker.swift in Sources */,
 				93C129E822753F570040D765 /* CatalogInteractor.swift in Sources */,
+				93C129F1227542040040D765 /* Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

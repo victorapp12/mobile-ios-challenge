@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 protocol CatalogInterfaceControllerProtocol: class {
-    
+    func display(_ products: [Product])
 }
 
 class CatalogInterfaceController: WKInterfaceController {
@@ -21,6 +21,7 @@ class CatalogInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        self.setup()
     }
 
     override func willActivate() {
@@ -40,10 +41,16 @@ class CatalogInterfaceController: WKInterfaceController {
         let presenter = CatalogPresenter()
         presenter.controller = self
         interactor.presenter = presenter
+        
+        interactor.getProducts()
     }
     
 }
 
 extension CatalogInterfaceController: CatalogInterfaceControllerProtocol {
+    
+    func display(_ products: [Product]) {
+        
+    }
     
 }
