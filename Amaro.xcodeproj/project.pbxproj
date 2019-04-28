@@ -22,6 +22,8 @@
 		931EFEF822751D3C0074961B /* Amaro WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 931EFEF722751D3C0074961B /* Amaro WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		931EFEFF22751D3C0074961B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931EFEFE22751D3C0074961B /* ExtensionDelegate.swift */; };
 		931EFF0122751D3D0074961B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931EFF0022751D3D0074961B /* Assets.xcassets */; };
+		932CC40D22766DFE00D91A4F /* Amaro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 932CC40F22766DFE00D91A4F /* Amaro.strings */; };
+		932CC41122766EE200D91A4F /* LocalizableConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CC41022766EE200D91A4F /* LocalizableConfiguration.swift */; };
 		93C129E622753EE00040D765 /* CatalogInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E522753EE00040D765 /* CatalogInterfaceController.swift */; };
 		93C129E822753F570040D765 /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E722753F570040D765 /* CatalogInteractor.swift */; };
 		93C129EA22753F8B0040D765 /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E922753F8B0040D765 /* CatalogPresenter.swift */; };
@@ -108,6 +110,8 @@
 		931EFEFE22751D3C0074961B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		931EFF0022751D3D0074961B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931EFF0222751D3D0074961B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932CC40E22766DFE00D91A4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Amaro.strings; sourceTree = "<group>"; };
+		932CC41022766EE200D91A4F /* LocalizableConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableConfiguration.swift; sourceTree = "<group>"; };
 		93C129E522753EE00040D765 /* CatalogInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInterfaceController.swift; sourceTree = "<group>"; };
 		93C129E722753F570040D765 /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
 		93C129E922753F8B0040D765 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 		931EFEFB22751D3C0074961B /* Amaro WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				932CC40A22766DD800D91A4F /* Localizable */,
 				93C129F2227549B90040D765 /* Configuration */,
 				93C129ED227541DD0040D765 /* Models */,
 				93C129E322753EAB0040D765 /* Scenes */,
@@ -226,6 +231,14 @@
 				931EFF0222751D3D0074961B /* Info.plist */,
 			);
 			path = "Amaro WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		932CC40A22766DD800D91A4F /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				932CC40F22766DFE00D91A4F /* Amaro.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		93C129E322753EAB0040D765 /* Scenes */ = {
@@ -261,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				93C129F3227549EC0040D765 /* BuildConfiguration.swift */,
+				932CC41022766EE200D91A4F /* LocalizableConfiguration.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -448,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				931EFF0122751D3D0074961B /* Assets.xcassets in Resources */,
+				932CC40D22766DFE00D91A4F /* Amaro.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +584,7 @@
 				93C129EA22753F8B0040D765 /* CatalogPresenter.swift in Sources */,
 				93C129E622753EE00040D765 /* CatalogInterfaceController.swift in Sources */,
 				931EFEFF22751D3C0074961B /* ExtensionDelegate.swift in Sources */,
+				932CC41122766EE200D91A4F /* LocalizableConfiguration.swift in Sources */,
 				93C129F6227550280040D765 /* ProductsMain.swift in Sources */,
 				93C129F4227549EC0040D765 /* BuildConfiguration.swift in Sources */,
 				93C129EF227541F80040D765 /* Product.swift in Sources */,
@@ -621,6 +637,14 @@
 				931EFEEE22751D3B0074961B /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		932CC40F22766DFE00D91A4F /* Amaro.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932CC40E22766DFE00D91A4F /* en */,
+			);
+			name = Amaro.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
