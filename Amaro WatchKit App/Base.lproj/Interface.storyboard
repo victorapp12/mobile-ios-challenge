@@ -12,8 +12,38 @@
         <!--Catalog Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="CatalogInterfaceController" customModule="Amaro_WatchKit_Extension"/>
+                <controller id="AgC-eL-Hgc" customClass="CatalogInterfaceController" customModule="Amaro_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="t18-G9-vhR">
+                            <items>
+                                <tableRow identifier="ProductRow" id="WEy-ua-Idk" customClass="ProductRow" customModule="Amaro_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="NOh-rC-erL">
+                                        <items>
+                                            <imageView width="1" height="171" alignment="left" id="Zmt-pV-Ecn"/>
+                                            <label width="1" alignment="center" text="PRODUCT NAME" textAlignment="center" numberOfLines="2" id="JEM-UV-4DT">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                            <label width="1" alignment="center" text="Price" textAlignment="center" id="Ohg-G9-yNS">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                            <label width="1" alignment="center" text="Discount" textAlignment="center" id="9jh-Cd-yx4">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="productImage" destination="Zmt-pV-Ecn" id="s2k-fe-04i"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="t18-G9-vhR" id="dXY-my-eJF"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="34" y="45"/>
         </scene>
     </scenes>
 </document>

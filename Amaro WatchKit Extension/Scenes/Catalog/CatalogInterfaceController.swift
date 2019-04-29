@@ -11,10 +11,15 @@ import Foundation
 
 protocol CatalogInterfaceControllerProtocol: class {
     func display(_ products: [Product])
+    func showLoading()
+    func hideLoading()
+    func displayError(_ message: MessageError)
 }
 
 class CatalogInterfaceController: WKInterfaceController {
-
+    
+    @IBOutlet var table: WKInterfaceTable!
+    
     var interactor: CatalogInteractor?
     
     override func awake(withContext context: Any?) {
@@ -50,6 +55,23 @@ class CatalogInterfaceController: WKInterfaceController {
 extension CatalogInterfaceController: CatalogInterfaceControllerProtocol {
     
     func display(_ products: [Product]) {
+        table.setNumberOfRows(products.count, withRowType: "ProductRow")
+        for(index, product) in products.enumerated() {
+            if let productRow = table.rowController(at: index) as? ProductRow {
+                productRow.setupRow(with: product)
+            }
+        }
+    }
+    
+    func showLoading() {
+        
+    }
+    
+    func hideLoading() {
+        
+    }
+    
+    func displayError(_ message: MessageError) {
         
     }
     

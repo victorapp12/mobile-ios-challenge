@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import WatchKit
+
+class ProductRow: NSObject {
+    
+    func setupRow(with product: Product) {
+    
+    }
+    
+}
+

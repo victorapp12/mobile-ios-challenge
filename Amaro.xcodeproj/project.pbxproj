@@ -24,6 +24,8 @@
 		931EFF0122751D3D0074961B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931EFF0022751D3D0074961B /* Assets.xcassets */; };
 		932CC40D22766DFE00D91A4F /* Amaro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 932CC40F22766DFE00D91A4F /* Amaro.strings */; };
 		932CC41122766EE200D91A4F /* LocalizableConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CC41022766EE200D91A4F /* LocalizableConfiguration.swift */; };
+		932CC413227674F200D91A4F /* MessageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CC412227674F200D91A4F /* MessageError.swift */; };
+		932CC4162276768C00D91A4F /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932CC4152276768C00D91A4F /* ProductRow.swift */; };
 		93C129E622753EE00040D765 /* CatalogInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E522753EE00040D765 /* CatalogInterfaceController.swift */; };
 		93C129E822753F570040D765 /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E722753F570040D765 /* CatalogInteractor.swift */; };
 		93C129EA22753F8B0040D765 /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C129E922753F8B0040D765 /* CatalogPresenter.swift */; };
@@ -112,6 +114,8 @@
 		931EFF0222751D3D0074961B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932CC40E22766DFE00D91A4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Amaro.strings; sourceTree = "<group>"; };
 		932CC41022766EE200D91A4F /* LocalizableConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableConfiguration.swift; sourceTree = "<group>"; };
+		932CC412227674F200D91A4F /* MessageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageError.swift; sourceTree = "<group>"; };
+		932CC4152276768C00D91A4F /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		93C129E522753EE00040D765 /* CatalogInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInterfaceController.swift; sourceTree = "<group>"; };
 		93C129E722753F570040D765 /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
 		93C129E922753F8B0040D765 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
@@ -241,6 +245,14 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		932CC4142276766100D91A4F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				932CC4152276768C00D91A4F /* ProductRow.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		93C129E322753EAB0040D765 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +264,7 @@
 		93C129E422753EBA0040D765 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				932CC4142276766100D91A4F /* CustomViews */,
 				93C129E522753EE00040D765 /* CatalogInterfaceController.swift */,
 				93C129E722753F570040D765 /* CatalogInteractor.swift */,
 				93C129E922753F8B0040D765 /* CatalogPresenter.swift */,
@@ -275,6 +288,7 @@
 			children = (
 				93C129F3227549EC0040D765 /* BuildConfiguration.swift */,
 				932CC41022766EE200D91A4F /* LocalizableConfiguration.swift */,
+				932CC412227674F200D91A4F /* MessageError.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -585,9 +599,11 @@
 				93C129E622753EE00040D765 /* CatalogInterfaceController.swift in Sources */,
 				931EFEFF22751D3C0074961B /* ExtensionDelegate.swift in Sources */,
 				932CC41122766EE200D91A4F /* LocalizableConfiguration.swift in Sources */,
+				932CC413227674F200D91A4F /* MessageError.swift in Sources */,
 				93C129F6227550280040D765 /* ProductsMain.swift in Sources */,
 				93C129F4227549EC0040D765 /* BuildConfiguration.swift in Sources */,
 				93C129EF227541F80040D765 /* Product.swift in Sources */,
+				932CC4162276768C00D91A4F /* ProductRow.swift in Sources */,
 				93C129EC22753FC10040D765 /* CatalogWorker.swift in Sources */,
 				93C129E822753F570040D765 /* CatalogInteractor.swift in Sources */,
 				93C129F1227542040040D765 /* Size.swift in Sources */,
