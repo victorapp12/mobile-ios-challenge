@@ -26,7 +26,8 @@ target 'Amaro WatchKit Extension' do
    platform :watchos, '3.0'
    pod 'Alamofire'
    pod 'AlamofireObjectMapper', '~> 5.0'
-
+   pod 'Kingfisher', '~> 5.0'
+   pod 'WatchActiviyIndicator'
 end
 
 

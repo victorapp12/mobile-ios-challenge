@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5E9A062278C9300079B949 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5E9A022278C9300079B949 /* OpenSans-Semibold.ttf */; };
+		1B5E9A072278C9300079B949 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5E9A032278C9300079B949 /* OpenSans-Light.ttf */; };
+		1B5E9A082278C9300079B949 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5E9A042278C9300079B949 /* OpenSans-Bold.ttf */; };
+		1B5E9A092278C9300079B949 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5E9A052278C9300079B949 /* OpenSans-Regular.ttf */; };
+		1B5E9A0C2278C9530079B949 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E9A0B2278C9530079B949 /* UIFontExtension.swift */; };
+		1B5E9A0E2278C9A50079B949 /* NSMutableAtributtedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E9A0D2278C9A50079B949 /* NSMutableAtributtedStringExtension.swift */; };
+		1B5E9A102278CB5D0079B949 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E9A0F2278CB5D0079B949 /* UIColorExtension.swift */; };
 		283F4BFB284F5972493FB676 /* Pods_Amaro_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B66FE3E3C98FE5CCF7B3B33 /* Pods_Amaro_WatchKit_App.framework */; };
 		7B8C5229F32A04E2D21E9415 /* Pods_AmaroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6D59956B907F03E439235 /* Pods_AmaroTests.framework */; };
 		8C5584150D3F76A7108FA76D /* Pods_Amaro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D591915438DE12DCF99BF19 /* Pods_Amaro.framework */; };
@@ -90,6 +97,13 @@
 		0ABE70C74F64BFE6B7364AE8 /* Pods-Amaro WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro WatchKit Extension/Pods-Amaro WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		0B66FE3E3C98FE5CCF7B3B33 /* Pods_Amaro_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaro_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		125FFFE8D6CB4FB8F85BCE5E /* Pods-AmaroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmaroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmaroTests/Pods-AmaroTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B5E9A022278C9300079B949 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		1B5E9A032278C9300079B949 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		1B5E9A042278C9300079B949 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		1B5E9A052278C9300079B949 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		1B5E9A0B2278C9530079B949 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		1B5E9A0D2278C9A50079B949 /* NSMutableAtributtedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAtributtedStringExtension.swift; sourceTree = "<group>"; };
+		1B5E9A0F2278CB5D0079B949 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		47B07A94ADD1140FE3974671 /* Pods-Amaro WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro WatchKit App/Pods-Amaro WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		47FFA20169C749A44D3706E1 /* libPods-Amaro WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Amaro WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D591915438DE12DCF99BF19 /* Pods_Amaro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +181,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B5E9A012278C9300079B949 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B5E9A022278C9300079B949 /* OpenSans-Semibold.ttf */,
+				1B5E9A032278C9300079B949 /* OpenSans-Light.ttf */,
+				1B5E9A042278C9300079B949 /* OpenSans-Bold.ttf */,
+				1B5E9A052278C9300079B949 /* OpenSans-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B5E9A0A2278C93B0079B949 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B5E9A0B2278C9530079B949 /* UIFontExtension.swift */,
+				1B5E9A0D2278C9A50079B949 /* NSMutableAtributtedStringExtension.swift */,
+				1B5E9A0F2278CB5D0079B949 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		931EFEC222751D390074961B = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +261,8 @@
 		931EFEFB22751D3C0074961B /* Amaro WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1B5E9A0A2278C93B0079B949 /* Extensions */,
+				1B5E9A012278C9300079B949 /* Resources */,
 				932CC40A22766DD800D91A4F /* Localizable */,
 				93C129F2227549B90040D765 /* Configuration */,
 				93C129ED227541DD0040D765 /* Models */,
@@ -388,6 +425,7 @@
 				931EFEF322751D3C0074961B /* Sources */,
 				931EFEF422751D3C0074961B /* Frameworks */,
 				931EFEF522751D3C0074961B /* Resources */,
+				75059231062AB4564BD94F1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -475,7 +513,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5E9A062278C9300079B949 /* OpenSans-Semibold.ttf in Resources */,
 				931EFF0122751D3D0074961B /* Assets.xcassets in Resources */,
+				1B5E9A072278C9300079B949 /* OpenSans-Light.ttf in Resources */,
+				1B5E9A082278C9300079B949 /* OpenSans-Bold.ttf in Resources */,
+				1B5E9A092278C9300079B949 /* OpenSans-Regular.ttf in Resources */,
 				932CC40D22766DFE00D91A4F /* Amaro.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +591,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		75059231062AB4564BD94F1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Amaro WatchKit Extension/Pods-Amaro WatchKit Extension-resources.sh",
+				"${PODS_ROOT}/WatchActiviyIndicator/WatchApp Extension/Assets.xcassets",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Amaro WatchKit Extension/Pods-Amaro WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7F0685E439EA9F75A05FE729 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -597,8 +661,10 @@
 			files = (
 				93C129EA22753F8B0040D765 /* CatalogPresenter.swift in Sources */,
 				93C129E622753EE00040D765 /* CatalogInterfaceController.swift in Sources */,
+				1B5E9A102278CB5D0079B949 /* UIColorExtension.swift in Sources */,
 				931EFEFF22751D3C0074961B /* ExtensionDelegate.swift in Sources */,
 				932CC41122766EE200D91A4F /* LocalizableConfiguration.swift in Sources */,
+				1B5E9A0E2278C9A50079B949 /* NSMutableAtributtedStringExtension.swift in Sources */,
 				932CC413227674F200D91A4F /* MessageError.swift in Sources */,
 				93C129F6227550280040D765 /* ProductsMain.swift in Sources */,
 				93C129F4227549EC0040D765 /* BuildConfiguration.swift in Sources */,
@@ -607,6 +673,7 @@
 				93C129EC22753FC10040D765 /* CatalogWorker.swift in Sources */,
 				93C129E822753F570040D765 /* CatalogInteractor.swift in Sources */,
 				93C129F1227542040040D765 /* Size.swift in Sources */,
+				1B5E9A0C2278C9530079B949 /* UIFontExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

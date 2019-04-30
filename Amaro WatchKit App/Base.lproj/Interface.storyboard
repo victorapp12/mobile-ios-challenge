@@ -19,7 +19,7 @@
                                 <tableRow identifier="ProductRow" id="WEy-ua-Idk" customClass="ProductRow" customModule="Amaro_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="NOh-rC-erL">
                                         <items>
-                                            <imageView width="1" height="171" alignment="left" id="Zmt-pV-Ecn"/>
+                                            <imageView width="1" height="174" alignment="left" id="Zmt-pV-Ecn"/>
                                             <label width="1" alignment="center" text="PRODUCT NAME" textAlignment="center" numberOfLines="2" id="JEM-UV-4DT">
                                                 <fontDescription key="font" type="system" pointSize="14"/>
                                             </label>
@@ -30,20 +30,24 @@
                                                 <fontDescription key="font" type="system" pointSize="13"/>
                                             </label>
                                         </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="3"/>
                                     </group>
                                     <connections>
-                                        <outlet property="productImage" destination="Zmt-pV-Ecn" id="s2k-fe-04i"/>
+                                        <outlet property="productImage" destination="Zmt-pV-Ecn" id="UNG-hy-6VV"/>
+                                        <outlet property="productName" destination="JEM-UV-4DT" id="RBI-3m-0ef"/>
+                                        <outlet property="productRow" destination="NOh-rC-erL" id="8Wp-Oe-XiG"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                     <connections>
                         <outlet property="table" destination="t18-G9-vhR" id="dXY-my-eJF"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="45"/>
+            <point key="canvasLocation" x="34" y="44.5"/>
         </scene>
     </scenes>
 </document>
