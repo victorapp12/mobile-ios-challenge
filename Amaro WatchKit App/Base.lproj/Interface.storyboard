@@ -33,8 +33,10 @@
                                         <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="3"/>
                                     </group>
                                     <connections>
+                                        <outlet property="productDiscount" destination="9jh-Cd-yx4" id="cHf-6g-ALj"/>
                                         <outlet property="productImage" destination="Zmt-pV-Ecn" id="UNG-hy-6VV"/>
                                         <outlet property="productName" destination="JEM-UV-4DT" id="RBI-3m-0ef"/>
+                                        <outlet property="productPrice" destination="Ohg-G9-yNS" id="HsI-7t-ESE"/>
                                         <outlet property="productRow" destination="NOh-rC-erL" id="8Wp-Oe-XiG"/>
                                     </connections>
                                 </tableRow>

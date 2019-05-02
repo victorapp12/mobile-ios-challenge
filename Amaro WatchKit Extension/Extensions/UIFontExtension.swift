@@ -11,31 +11,31 @@ import UIKit
 
 extension UIFont {
     
-    public static func san_openSansRegular(ofSize size: CGFloat) -> UIFont {
+    public static func amr_openSansRegular(ofSize size: CGFloat) -> UIFont {
         if let font = UIFont(name: "OpenSans-Regular", size: size) {
             return font
         }
-        return UIFont.systemFont(ofSize:size)
+        return UIFont.systemFont(ofSize:size, weight: .regular)
     }
     
-    public static func san_openSansBold(ofSize size: CGFloat) -> UIFont {
+    public static func amr_openSansBold(ofSize size: CGFloat) -> UIFont {
         if let font = UIFont(name: "OpenSans-Bold", size: size) {
             return font
         }
         return UIFont.boldSystemFont(ofSize:size)
     }
     
-    public static func san_openSansSemiBold(ofSize size: CGFloat) -> UIFont {
+    public static func amr_openSansSemiBold(ofSize size: CGFloat) -> UIFont {
         if let font = UIFont(name: "OpenSans-SemiBold", size: size) {
             return font
         }
-        return UIFont.systemFont(ofSize:size)
+        return UIFont.systemFont(ofSize:size, weight: .semibold)
     }
     
-    public static func san_openSansLight(ofSize size: CGFloat) -> UIFont {
+    public static func amr_openSansLight(ofSize size: CGFloat) -> UIFont {
         if let font = UIFont(name: "OpenSans-Light", size: size) {
             return font
         }
-        return UIFont.systemFont(ofSize:size)
+        return UIFont.systemFont(ofSize:size, weight: .light)
     }
 }

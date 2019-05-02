@@ -27,6 +27,7 @@ class CatalogInterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         self.setup()
+        self.setupUI()
     }
 
     override func willActivate() {
@@ -48,6 +49,11 @@ class CatalogInterfaceController: WKInterfaceController {
         interactor.presenter = presenter
         
         interactor.getProducts()
+    }
+    
+    //Setup UI
+    private func setupUI() {
+        self.setTitle("AMARO")
     }
     
 }
