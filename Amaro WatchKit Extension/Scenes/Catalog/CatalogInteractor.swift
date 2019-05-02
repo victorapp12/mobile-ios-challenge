@@ -10,6 +10,7 @@ import Foundation
 
 protocol CatalogInteractorProtocol {
     func getProducts()
+    func filter(products: [Product])
 }
 
 class CatalogInteractor: CatalogInteractorProtocol {
@@ -22,6 +23,13 @@ class CatalogInteractor: CatalogInteractorProtocol {
         worker.requestProducts(with: url, completion: { ProductsMain in
             self.presenter?.present(ProductsMain)
         })
+    }
+    
+    func filter(products: [Product]) {
+        if products.count == 0 {
+            return
+        }
+        presenter?.present(onSale: products)
     }
     
 }

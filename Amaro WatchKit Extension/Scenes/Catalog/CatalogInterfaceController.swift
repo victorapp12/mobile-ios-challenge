@@ -14,6 +14,8 @@ protocol CatalogInterfaceControllerProtocol: class {
     func showLoading()
     func hideLoading()
     func displayError(_ message: MessageError)
+    func addProductToBasket(sku: String, name: String, size: String)
+    var products: [Product] { get set }
 }
 
 class CatalogInterfaceController: WKInterfaceController {
@@ -21,6 +23,9 @@ class CatalogInterfaceController: WKInterfaceController {
     @IBOutlet var table: WKInterfaceTable!
     
     var interactor: CatalogInteractor?
+    var products: [Product] = []
+    var applyFilter: Bool = true
+    var displayedProducts: [Product] = []
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -54,6 +59,29 @@ class CatalogInterfaceController: WKInterfaceController {
     //Setup UI
     private func setupUI() {
         self.setTitle("AMARO")
+        self.addMenuItem(with: .info, title: "On sale products", action: #selector(addSaleFilter))
+        self.addMenuItem(with: .add, title: "Basket", action: #selector(goToBasket))
+    }
+    
+    @objc func addSaleFilter() {
+        if self.applyFilter {
+            self.applyFilter = false
+            interactor?.filter(products: self.products)
+        } else {
+            self.applyFilter = true
+            self.display(self.products)
+        }
+    }
+    
+    @objc func goToBasket() {
+        self.pushController(withName: "BasketView", context: nil)
+    }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        if let availableSizes = self.displayedProducts[rowIndex].sizes,
+            availableSizes.count > 0 {
+            self.presentController(withName: "DetailView", context: displayedProducts[rowIndex])
+        }
     }
     
 }
@@ -61,12 +89,18 @@ class CatalogInterfaceController: WKInterfaceController {
 extension CatalogInterfaceController: CatalogInterfaceControllerProtocol {
     
     func display(_ products: [Product]) {
+        self.displayedProducts = products
         table.setNumberOfRows(products.count, withRowType: "ProductRow")
         for(index, product) in products.enumerated() {
             if let productRow = table.rowController(at: index) as? ProductRow {
                 productRow.setupRow(with: product)
             }
         }
+    }
+    
+    func addProductToBasket(sku: String, name: String, size: String) {
+        let productToAdd = ["sku": sku, "name": name, "size": size]
+        self.pushController(withName: "BasketView", context: productToAdd)
     }
     
     func showLoading() {

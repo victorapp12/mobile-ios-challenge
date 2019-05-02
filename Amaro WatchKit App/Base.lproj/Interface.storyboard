@@ -8,6 +8,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Catalog Interface Controller-->
         <scene sceneID="aou-V4-d1y">
@@ -54,6 +62,72 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="34" y="44.5"/>
+        </scene>
+        <!--DetailView-->
+        <scene sceneID="3p5-gK-93b">
+            <objects>
+                <controller identifier="DetailView" id="fq5-u2-vOl" customClass="DetailInterfaceController" customModule="Amaro_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Product Name" id="WER-u1-CoW"/>
+                        <separator alignment="left" id="356-o1-uJq"/>
+                        <label width="1" alignment="left" text="Available Sizes:" id="TDp-NF-8Vv">
+                            <fontDescription key="font" name="OpenSans-Light" family="Open Sans" pointSize="8"/>
+                        </label>
+                        <picker width="1" height="100" alignment="center" id="8gy-fV-HUs">
+                            <connections>
+                                <action selector="pickerSelectedItemChangedWithValue:" destination="fq5-u2-vOl" id="uoq-jG-xfe"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Buy" id="805-Fq-OVM">
+                            <connections>
+                                <action selector="addProductToBasket" destination="fq5-u2-vOl" id="cKw-Ei-1U2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="availableSizesLabel" destination="TDp-NF-8Vv" id="XZI-7Y-JzN"/>
+                        <outlet property="buyButton" destination="805-Fq-OVM" id="ZBd-lj-sAx"/>
+                        <outlet property="picker" destination="8gy-fV-HUs" id="Das-5l-ulO"/>
+                        <outlet property="productNameLabel" destination="WER-u1-CoW" id="MXL-mU-zBr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="302" y="14"/>
+        </scene>
+        <!--BasketView-->
+        <scene sceneID="3NW-cy-Bxi">
+            <objects>
+                <controller identifier="BasketView" id="KcH-ZN-Hyn" customClass="BasketInterfaceController" customModule="Amaro_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="aeq-KQ-jm1">
+                            <items>
+                                <label width="1" alignment="center" verticalAlignment="center" text="Empty Basket" textAlignment="center" id="Fpm-aF-erP"/>
+                            </items>
+                        </group>
+                        <group width="1" height="1" alignment="left" id="4Sq-QR-lmq">
+                            <items>
+                                <table alignment="left" id="aZX-1j-ryp">
+                                    <items>
+                                        <tableRow id="GfO-FV-x6u">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="T9R-xZ-Dmb">
+                                                <items>
+                                                    <label width="1" alignment="left" text="Product name" numberOfLines="2" id="AsN-Ea-uvT"/>
+                                                    <label width="1" alignment="left" text="Size: M" id="6UN-ZW-SSs">
+                                                        <fontDescription key="font" name="OpenSans" family="Open Sans" pointSize="6"/>
+                                                    </label>
+                                                    <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="ZpF-8D-Qie"/>
+                                                </items>
+                                                <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="302" y="414"/>
         </scene>
     </scenes>
 </document>

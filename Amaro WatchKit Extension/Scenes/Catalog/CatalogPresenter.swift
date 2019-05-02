@@ -11,6 +11,7 @@ import Alamofire
 
 protocol CatalogPresenterProtocol {
     func present(_ productsMain: DataResponse<ProductsMain>)
+    func present(onSale products: [Product])
 }
 
 class CatalogPresenter: CatalogPresenterProtocol {
@@ -30,6 +31,7 @@ class CatalogPresenter: CatalogPresenterProtocol {
                     return
                 }
                 if let products = productsResponse.productsMain {
+                    controller?.products = products
                     controller?.display(products)
                     return
                 }
@@ -43,6 +45,13 @@ class CatalogPresenter: CatalogPresenterProtocol {
             //Something Wrong
             break
         }
+    }
+    
+    func present(onSale products: [Product]) {
+        let onSaleProducts = products.filter { product in
+            product.on_sale == true
+        }
+        controller?.display(onSaleProducts)
     }
     
 }

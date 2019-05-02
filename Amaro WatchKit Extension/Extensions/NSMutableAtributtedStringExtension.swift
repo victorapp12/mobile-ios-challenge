@@ -32,4 +32,18 @@ extension NSMutableAttributedString {
         self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#cf3838"), .font: UIFont.amr_openSansSemiBold(ofSize: fontSize)]))
     }
     
+    //Detail
+    
+    func productDetailTitleAttrString(string: String, fontSize: CGFloat) {
+        self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#FFFFFF"), .font: UIFont.amr_openSansRegular(ofSize: fontSize)]))
+    }
+    
+    func availableSizesTitleAttrString(string: String, fontSize: CGFloat) {
+        self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#999999"), .font: UIFont.amr_openSansRegular(ofSize: fontSize)]))
+    }
+    
+    func availableBuyButtonTitleAttrString(string: String, fontSize: CGFloat) {
+        self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#FFFFFF"), .font: UIFont.amr_openSansRegular(ofSize: fontSize)]))
+    }
+    
 }
