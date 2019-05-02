@@ -12,11 +12,11 @@ import UIKit
 extension NSMutableAttributedString {
     
     func productTitleAttrString(string: String, fontSize: CGFloat) {
-        self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#ffffff"), .font: UIFont.amr_openSansRegular(ofSize: fontSize)]))
+        self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#000000"), .font: UIFont.amr_openSansRegular(ofSize: fontSize)]))
     }
     
     func  productPriceAttrString(string: String, fontSize: CGFloat) {
-        self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#ffffff"), .font: UIFont.amr_openSansSemiBold(ofSize: fontSize)]))
+        self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#000000"), .font: UIFont.amr_openSansSemiBold(ofSize: fontSize)]))
     }
     
     func productInstallmentsAttrString(string: String, fontSize: CGFloat) {

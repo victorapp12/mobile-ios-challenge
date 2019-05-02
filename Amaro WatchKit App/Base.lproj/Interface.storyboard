@@ -17,19 +17,23 @@
                         <table alignment="left" id="t18-G9-vhR">
                             <items>
                                 <tableRow identifier="ProductRow" id="WEy-ua-Idk" customClass="ProductRow" customModule="Amaro_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="NOh-rC-erL">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="6" id="NOh-rC-erL">
                                         <items>
-                                            <imageView width="1" height="174" alignment="left" id="Zmt-pV-Ecn"/>
+                                            <imageView width="1" height="174" alignment="left" animationDuration="1" id="Zmt-pV-Ecn"/>
                                             <label width="1" alignment="center" text="PRODUCT NAME" textAlignment="center" numberOfLines="2" id="JEM-UV-4DT">
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="font" type="system" pointSize="14"/>
                                             </label>
                                             <label width="1" alignment="center" text="Price" textAlignment="center" id="Ohg-G9-yNS">
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="font" type="system" pointSize="13"/>
                                             </label>
                                             <label width="1" alignment="center" text="Discount" textAlignment="center" id="9jh-Cd-yx4">
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="font" type="system" pointSize="13"/>
                                             </label>
                                         </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="3"/>
                                     </group>
                                     <connections>
