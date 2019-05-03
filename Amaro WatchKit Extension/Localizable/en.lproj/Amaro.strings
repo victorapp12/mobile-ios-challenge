@@ -6,4 +6,10 @@
   Copyright © 2019 Victor Palhares. All rights reserved.
 */
 
-"label_test" = "Teste";
+"onSaleFilter" = "On Sale";
+"basketMenu" = "Basket";
+"sizes" = "Sizes";
+"size" = "Size";
+"buy" = "BUY";
+"unavailable" = "Unavailable";
+"clean" = "Clean";

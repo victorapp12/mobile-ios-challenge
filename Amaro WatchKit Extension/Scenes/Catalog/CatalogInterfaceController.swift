@@ -14,13 +14,30 @@ protocol CatalogInterfaceControllerProtocol: class {
     func showLoading()
     func hideLoading()
     func displayError(_ message: MessageError)
-    func addProductToBasket(sku: String, name: String, size: String)
     var products: [Product] { get set }
 }
 
 class CatalogInterfaceController: WKInterfaceController {
     
     @IBOutlet var table: WKInterfaceTable!
+    @IBOutlet weak var buttonsGroup: WKInterfaceGroup!
+    
+    @IBOutlet var buttonFilter: WKInterfaceButton! {
+        didSet {
+            let attrTitle = NSMutableAttributedString()
+            attrTitle.filtersButtonAttrString(string: amaroLocalizableString("onSaleFilter") , fontSize: CGFloat(integerLiteral: 14))
+            self.buttonFilter.setAttributedTitle(attrTitle)
+            self.buttonFilter.setBackgroundColor(UIColor.fromHex("#000000"))
+        }
+    }
+    @IBOutlet var buttonBasket: WKInterfaceButton! {
+        didSet {
+            let attrTitle = NSMutableAttributedString()
+            attrTitle.filtersButtonAttrString(string: amaroLocalizableString("basketMenu") , fontSize: CGFloat(integerLiteral: 14))
+            self.buttonBasket.setAttributedTitle(attrTitle)
+            self.buttonBasket.setBackgroundColor(UIColor.fromHex("#000000"))
+        }
+    }
     
     var interactor: CatalogInteractor?
     var products: [Product] = []
@@ -59,8 +76,9 @@ class CatalogInterfaceController: WKInterfaceController {
     //Setup UI
     private func setupUI() {
         self.setTitle("AMARO")
-        self.addMenuItem(with: .info, title: "On sale products", action: #selector(addSaleFilter))
-        self.addMenuItem(with: .add, title: "Basket", action: #selector(goToBasket))
+        self.addMenuItem(with: .info, title: amaroLocalizableString("onSaleFilter") , action: #selector(addSaleFilter))
+        self.addMenuItem(with: .add, title: amaroLocalizableString("basketMenu"), action: #selector(goToBasket))
+        self.buttonsGroup.setHidden(true)
     }
     
     @objc func addSaleFilter() {
@@ -84,6 +102,14 @@ class CatalogInterfaceController: WKInterfaceController {
         }
     }
     
+    @IBAction func basketButton() {
+        goToBasket()
+    }
+    
+    @IBAction func onSaleFilterButton() {
+        addSaleFilter()
+    }
+    
 }
 
 extension CatalogInterfaceController: CatalogInterfaceControllerProtocol {
@@ -91,16 +117,12 @@ extension CatalogInterfaceController: CatalogInterfaceControllerProtocol {
     func display(_ products: [Product]) {
         self.displayedProducts = products
         table.setNumberOfRows(products.count, withRowType: "ProductRow")
+        self.buttonsGroup.setHidden(false)
         for(index, product) in products.enumerated() {
             if let productRow = table.rowController(at: index) as? ProductRow {
                 productRow.setupRow(with: product)
             }
         }
-    }
-    
-    func addProductToBasket(sku: String, name: String, size: String) {
-        let productToAdd = ["sku": sku, "name": name, "size": size]
-        self.pushController(withName: "BasketView", context: productToAdd)
     }
     
     func showLoading() {

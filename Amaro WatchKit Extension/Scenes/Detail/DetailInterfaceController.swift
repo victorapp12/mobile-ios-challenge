@@ -47,11 +47,11 @@ class DetailInterfaceController: WKInterfaceController {
     private func setupUI() {
         //Sizes
         let attrAvailableSizes = NSMutableAttributedString()
-        attrAvailableSizes.availableSizesTitleAttrString(string: "Sizes:", fontSize: CGFloat(integerLiteral: 8))
+        attrAvailableSizes.availableSizesTitleAttrString(string: amaroLocalizableString("sizes") + ":" , fontSize: CGFloat(integerLiteral: 8))
         availableSizesLabel.setAttributedText(attrAvailableSizes)
         //Buy Button
         let attrBuyButtonTitle = NSMutableAttributedString()
-        attrBuyButtonTitle.availableBuyButtonTitleAttrString(string: "BUY", fontSize: CGFloat(integerLiteral: 14))
+        attrBuyButtonTitle.availableBuyButtonTitleAttrString(string: amaroLocalizableString("buy"), fontSize: CGFloat(integerLiteral: 14))
         buyButton.setAttributedTitle(attrBuyButtonTitle)
         buyButton.setBackgroundColor(UIColor.fromHex("#1cc286"))
     }
@@ -77,7 +77,7 @@ class DetailInterfaceController: WKInterfaceController {
         let pickerItems: [WKPickerItem] = sizes.map {
             var sizeName = $0.size ?? ""
             if let available = $0.available, available == false {
-                sizeName += " - Unavailable"
+                sizeName += " - " + amaroLocalizableString("unavailable")
             }
             let pickerItem = WKPickerItem()
             pickerItem.title = sizeName
@@ -107,7 +107,8 @@ class DetailInterfaceController: WKInterfaceController {
     
     private func editBasket(size: Size) {
         self.dismiss()
-        catalogController.addProductToBasket(sku: size.sku ?? "", name: self.productName, size: size.size ?? "")
+        let productToAdd = BasketItem(name: self.productName, sku: size.sku ?? "", size: size.size ?? "")
+        saveBasket(item: productToAdd)
     }
     
 }

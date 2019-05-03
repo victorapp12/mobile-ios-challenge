@@ -22,6 +22,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="CatalogInterfaceController" customModule="Amaro_WatchKit_Extension">
                     <items>
+                        <group width="1" alignment="left" id="U6o-5c-m6w">
+                            <items>
+                                <button width="0.5" alignment="left" title="On Sale" id="6pc-aF-EV2">
+                                    <connections>
+                                        <action selector="onSaleFilterButton" destination="AgC-eL-Hgc" id="JF9-XO-tI0"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="right" title="Basket" id="oCt-T6-eOR">
+                                    <connections>
+                                        <action selector="basketButton" destination="AgC-eL-Hgc" id="EWe-2C-Qi1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                         <table alignment="left" id="t18-G9-vhR">
                             <items>
                                 <tableRow identifier="ProductRow" id="WEy-ua-Idk" customClass="ProductRow" customModule="Amaro_WatchKit_Extension">
@@ -57,6 +71,9 @@
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                     <connections>
+                        <outlet property="buttonBasket" destination="oCt-T6-eOR" id="B9X-Yt-Kbl"/>
+                        <outlet property="buttonFilter" destination="6pc-aF-EV2" id="Lvu-zD-0uc"/>
+                        <outlet property="buttonsGroup" destination="U6o-5c-m6w" id="I08-TM-BDW"/>
                         <outlet property="table" destination="t18-G9-vhR" id="dXY-my-eJF"/>
                     </connections>
                 </controller>
@@ -99,35 +116,42 @@
             <objects>
                 <controller identifier="BasketView" id="KcH-ZN-Hyn" customClass="BasketInterfaceController" customModule="Amaro_WatchKit_Extension">
                     <items>
+                        <table alignment="left" id="aZX-1j-ryp">
+                            <items>
+                                <tableRow identifier="BasketRow" id="GfO-FV-x6u" customClass="BasketRow" customModule="Amaro_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="T9R-xZ-Dmb">
+                                        <items>
+                                            <label width="1" alignment="left" text="Product name" numberOfLines="2" id="AsN-Ea-uvT">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="Size: M" id="6UN-ZW-SSs">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="font" name="OpenSans" family="Open Sans" pointSize="6"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="productGroup" destination="T9R-xZ-Dmb" id="0vZ-jT-3Af"/>
+                                        <outlet property="productName" destination="AsN-Ea-uvT" id="bIj-0h-PRM"/>
+                                        <outlet property="productSize" destination="6UN-ZW-SSs" id="CGU-zA-3Up"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                         <group width="1" alignment="left" id="aeq-KQ-jm1">
                             <items>
                                 <label width="1" alignment="center" verticalAlignment="center" text="Empty Basket" textAlignment="center" id="Fpm-aF-erP"/>
                             </items>
                         </group>
-                        <group width="1" height="1" alignment="left" id="4Sq-QR-lmq">
-                            <items>
-                                <table alignment="left" id="aZX-1j-ryp">
-                                    <items>
-                                        <tableRow id="GfO-FV-x6u">
-                                            <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="T9R-xZ-Dmb">
-                                                <items>
-                                                    <label width="1" alignment="left" text="Product name" numberOfLines="2" id="AsN-Ea-uvT"/>
-                                                    <label width="1" alignment="left" text="Size: M" id="6UN-ZW-SSs">
-                                                        <fontDescription key="font" name="OpenSans" family="Open Sans" pointSize="6"/>
-                                                    </label>
-                                                    <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="ZpF-8D-Qie"/>
-                                                </items>
-                                                <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
-                                            </group>
-                                        </tableRow>
-                                    </items>
-                                </table>
-                            </items>
-                        </group>
                     </items>
+                    <connections>
+                        <outlet property="emptyBasketGroup" destination="aeq-KQ-jm1" id="Gei-w5-Cz1"/>
+                        <outlet property="table" destination="aZX-1j-ryp" id="eYC-Fz-LBC"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="302" y="414"/>
+            <point key="canvasLocation" x="302" y="334"/>
         </scene>
     </scenes>
 </document>

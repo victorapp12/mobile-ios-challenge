@@ -13,9 +13,7 @@ import AlamofireObjectMapper
 typealias responseProductsHandler = (DataResponse<ProductsMain>) -> Void
 
 protocol CatalogWorkerProtocol {
-    
     func requestProducts(with url: URL, completion: @escaping(responseProductsHandler))
-    
 }
 
 class CatalogWorker: CatalogWorkerProtocol {

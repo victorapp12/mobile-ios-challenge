@@ -17,6 +17,7 @@
 		1BB77F5F227B775600CA81DA /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB77F5E227B775600CA81DA /* DetailInterfaceController.swift */; };
 		1BB77F62227B8F1500CA81DA /* BasketInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB77F61227B8F1500CA81DA /* BasketInterfaceController.swift */; };
 		1BB77F65227B9F4600CA81DA /* BasketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB77F64227B9F4600CA81DA /* BasketRow.swift */; };
+		1BB77F67227BA28500CA81DA /* BasketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB77F66227BA28500CA81DA /* BasketItem.swift */; };
 		283F4BFB284F5972493FB676 /* Pods_Amaro_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B66FE3E3C98FE5CCF7B3B33 /* Pods_Amaro_WatchKit_App.framework */; };
 		7B8C5229F32A04E2D21E9415 /* Pods_AmaroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6D59956B907F03E439235 /* Pods_AmaroTests.framework */; };
 		8C5584150D3F76A7108FA76D /* Pods_Amaro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D591915438DE12DCF99BF19 /* Pods_Amaro.framework */; };
@@ -110,6 +111,7 @@
 		1BB77F5E227B775600CA81DA /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		1BB77F61227B8F1500CA81DA /* BasketInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketInterfaceController.swift; sourceTree = "<group>"; };
 		1BB77F64227B9F4600CA81DA /* BasketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRow.swift; sourceTree = "<group>"; };
+		1BB77F66227BA28500CA81DA /* BasketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketItem.swift; sourceTree = "<group>"; };
 		47B07A94ADD1140FE3974671 /* Pods-Amaro WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amaro WatchKit App/Pods-Amaro WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		47FFA20169C749A44D3706E1 /* libPods-Amaro WatchKit Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Amaro WatchKit Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D591915438DE12DCF99BF19 /* Pods_Amaro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,6 +351,7 @@
 				93C129EE227541F80040D765 /* Product.swift */,
 				93C129F0227542040040D765 /* Size.swift */,
 				93C129F5227550280040D765 /* ProductsMain.swift */,
+				1BB77F66227BA28500CA81DA /* BasketItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				931EFEFF22751D3C0074961B /* ExtensionDelegate.swift in Sources */,
 				932CC41122766EE200D91A4F /* LocalizableConfiguration.swift in Sources */,
 				1BB77F62227B8F1500CA81DA /* BasketInterfaceController.swift in Sources */,
+				1BB77F67227BA28500CA81DA /* BasketItem.swift in Sources */,
 				1B5E9A0E2278C9A50079B949 /* NSMutableAtributtedStringExtension.swift in Sources */,
 				932CC413227674F200D91A4F /* MessageError.swift in Sources */,
 				93C129F6227550280040D765 /* ProductsMain.swift in Sources */,

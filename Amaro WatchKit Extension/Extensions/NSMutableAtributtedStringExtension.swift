@@ -32,6 +32,10 @@ extension NSMutableAttributedString {
         self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#cf3838"), .font: UIFont.amr_openSansSemiBold(ofSize: fontSize)]))
     }
     
+    func  filtersButtonAttrString(string: String, fontSize: CGFloat) {
+        self.append(NSAttributedString.init(string: string, attributes: [NSAttributedString.Key.foregroundColor:UIColor.fromHex("#FFFFFF"), .font: UIFont.amr_openSansSemiBold(ofSize: fontSize)]))
+    }
+    
     //Detail
     
     func productDetailTitleAttrString(string: String, fontSize: CGFloat) {
