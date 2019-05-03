@@ -9,7 +9,6 @@
 import Foundation
 import WatchKit
 import Kingfisher
-import WatchActiviyIndicator
 
 class ProductRow: NSObject {
     

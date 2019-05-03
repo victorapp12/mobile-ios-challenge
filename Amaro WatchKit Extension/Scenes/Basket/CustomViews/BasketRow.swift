@@ -19,7 +19,6 @@ class BasketRow: NSObject {
     func setupRow(product: BasketItem) {
         if let productName = product.name {
             self.setup(name: productName)
-            print(productName)
         }
         if let productSize = product.size {
             self.setup(size: productSize)
